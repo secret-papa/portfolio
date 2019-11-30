@@ -10,9 +10,9 @@ function Hedaer() {
     <header className={cx(mn)}>
       <h1 className={cx(`${mn}_logo`)}><a href="/">FRONTEND DEVELOPER</a></h1>
       <nav className={cx(`${mn}_nav`)}>
-        <a className={cx(`${mn}_nav_item`)} href="#about">ABOUT</a>
-        <a className={cx(`${mn}_nav_item`)} href="#work">WORK</a>
-        <a className={cx(`${mn}_nav_item`)} href="#contact">CONTARCT</a>
+        <a className={cx(`${mn}_nav_item`)} href="/#about">ABOUT</a>
+        <a className={cx(`${mn}_nav_item`)} href="/#work">WORK</a>
+        <a className={cx(`${mn}_nav_item`)} href="/#contact">CONTARCT</a>
       </nav>
     </header>
   )
