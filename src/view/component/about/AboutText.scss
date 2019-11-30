@@ -3,5 +3,5 @@
 .AboutText {
   margin-bottom: 120px;
   width: $contents-width; 
-  @include content_text();
+  @include content_text(28px, 38px, 0.06px);
 }

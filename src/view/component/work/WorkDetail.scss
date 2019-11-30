@@ -1,0 +1,37 @@
+@import '../../../styles/mixin.scss';
+
+.WorkDetail {
+  width: $contents-width;
+
+  &_title {
+    @include content_title();
+    color: #162225;
+    margin-bottom: 84px;
+  }
+  &_desc {
+    @include content_text(24px, 36px, 0.04px);
+    padding-bottom: 44px;
+  }
+
+  &_distribute {
+    &_guide_text {
+      @include guidance_text(#000002);
+      margin-bottom: 18px;
+    }
+    &_list {
+      display: flex;
+
+      &_item {
+        margin-right: 24px;
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &_link {
+          font-size: 24px;
+          font-family: 'roboto';
+        }
+      }
+    }
+  }
+}

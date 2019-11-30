@@ -1,0 +1,25 @@
+@import '../../../styles/mixin.scss';
+
+.WorkPage {
+  &_footer {
+    background: $main-color;
+    bottom: 0;
+    height: $work-footer-height;
+    left: 0;
+    position: fixed;
+    width: 100%;
+
+    &_wrp {
+      @include main-grid();
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+    }
+
+    &_guide {
+      @include guidance_text(#fff);
+      padding-bottom: 38px;
+    }
+  }
+}

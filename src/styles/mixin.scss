@@ -1,6 +1,11 @@
 @import './font.scss';
 @import './variable.scss';
 
+@mixin main-grid {
+  width: 1220px;
+  margin: 0 auto;
+}
+
 @mixin guidance_text($color) {
   font-size: $guidance-font-size;
   font-family: 'roboto';
@@ -8,10 +13,11 @@
   letter-spacing: 0.1em;
 }
 
-@mixin content_text() {
-  font-size: 28px;
-  line-height: 38px;
+@mixin content_text($font-size, $line-height, $letter-spacing) {
+  font-size: $font-size;
+  line-height: $line-height;
   font-family: 'nanum-square-bold';
+  letter-spacing: $letter-spacing;
 }
 
 @mixin content_title() {
