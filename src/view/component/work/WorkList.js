@@ -7,7 +7,7 @@ function WorkList() {
   return (
     <ul>
       {
-        workListData.map(({ id, date,env, title, spec }) => <WorkItem key={id} date={date} env={env} title={title} spec={spec} />)
+        workListData.map(({ id, date,env, title, spec }) => <WorkItem key={id} date={date} env={env} id={id} title={title} spec={spec} />)
       }
     </ul>
   )

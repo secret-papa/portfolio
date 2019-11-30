@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Layout Header={Header}>
           <Switch>
-            <Route path="/work" component={Work} />
+            <Route path="/work/:id" component={Work} />
             <Route path="/" component={Main} />
           </Switch>
         </Layout>
