@@ -7,7 +7,7 @@ const mn = "ContactBox";
 
 function ContactBox() {
   return (
-    <section className={cx(`${mn}`)} >
+    <section className={cx(`${mn}`)} id="contact" >
       <h2 className={cx(`${mn}_title`)} >CONTACT</h2>
       <ul className={cx(`${mn}_list`)}>
         <li className={cx(`${mn}_list_item`)}>

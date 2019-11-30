@@ -8,7 +8,7 @@ const mn = "WorkBox";
 
 function WorkBox() {
   return (
-    <section className={cx(`${mn}`)}>
+    <section className={cx(`${mn}`)} id="work">
       <h2 className={cx(`${mn}_title`)}>WORKS</h2>
       <WorkList />
     </section>
