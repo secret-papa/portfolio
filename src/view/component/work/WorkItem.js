@@ -8,6 +8,10 @@ const cx = classnames.bind(style);
 const mn = "WorkItem";
 
 function WorkItem({
+  color: {
+    title: titleColor,
+    info: infoColor
+  },
   date: {
     year,
     month
@@ -15,26 +19,34 @@ function WorkItem({
   env,
   id,
   title,
-  spec
+  spec,
 }) {
-  const isOldWork = new Date().getFullYear() > year;
   return (
-    <li className={cx(`${mn}`, { old: isOldWork })}>
-      <article className={cx(`${mn}_wrp`)}>
-        <Link className={cx(`${mn}_link`)} to={`/work/${id}`}>
-          <h3 className={cx(`${mn}_title`)}>{title}</h3>
-          <div className={cx(`${mn}_info`)}>
-            <span className={cx(`${mn}_info_left`)}>{year}.{month}</span>
-            <span className={cx(`${mn}_info_center`)}>{env}</span>
-            <span className={cx(`${mn}_info_right`)}>{spec.join(', ')}</span>
-          </div>
-        </Link>
-      </article>
-    </li>
+    <article className={cx(`${mn}`)}>
+      <Link className={cx(`${mn}_link`)} to={`/work/${id}`}>
+        <h3 className={cx(`${mn}_title`, titleColor)}>{title}</h3>
+        <div className={cx(`${mn}_info`, infoColor)}>
+          <span className={cx(`${mn}_info_left`)}>{year}.{month}</span>
+          <span className={cx(`${mn}_info_center`, infoColor)}>{env}</span>
+          <span className={cx(`${mn}_info_right`)}>{spec.join(', ')}</span>
+        </div>
+      </Link>
+    </article>
   )
 }
 
+WorkItem.defaultProps = {
+  color: {
+    title: "blue",
+    info: "black"
+  }
+}
+
 WorkItem.propTypes = {
+  color: PropTypes.shape({
+    title: PropTypes.oneOf(["blue", "beige", "white"]),
+    infoColor: PropTypes.oneOf(["black", "white"])
+  }),
   date: PropTypes.shape({
     year: PropTypes.string.isRequired,
     month: PropTypes.string.isRequired,

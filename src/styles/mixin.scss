@@ -14,16 +14,15 @@
   font-family: 'nanum-square-bold';
 }
 
-@mixin content_title($color) {
-  color: $color;
+@mixin content_title() {
   font-family: 'blacker-bold';
   font-size: $content-title-font-size;
   line-height: 110px;
 }
 
-@mixin content_info($color) {
-  color: $color;
+@mixin content_info() {
   font-size: 22px;
+  font-family: 'roboto';
 }
 
 @mixin point_underline() {

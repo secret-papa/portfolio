@@ -8,5 +8,4 @@ function Work(props) {
   )
 }
 
-export default Work
-
+export default Work;

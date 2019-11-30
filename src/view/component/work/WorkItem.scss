@@ -1,27 +1,36 @@
 @import '../../../styles/mixin.scss';
 
 .WorkItem {
-  margin-bottom: 122px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &_title {
-    @include content_title(#0001fd);
+    @include content_title();
     margin-bottom: 14px;
-  }
 
-  &.old &_title {
-    color: #e0e0e0;
+    &.beige {
+      color: #e0e0e0;
+    }
+
+    &.blue {
+      color: #0001fd;
+    }
+
+    &.white {
+      color: #fff;
+    }
   }
 
   &_info {
-    @include content_info(#02020a);
+    @include content_info();
+
+    &.black {
+      color: #02020a;
+    }
+
+    &.white {
+      color: #fff;
+    }
 
     &_center {
       &::before, &::after {
-        background: #02020a;
         content: '';
         display: inline-block;
         height: 2px;
@@ -29,6 +38,14 @@
         transform: translateY(-2px);
         vertical-align: middle;
         width: 12px;
+      }
+
+      &.black::before, &.black::after {
+        background: #02020a;
+      }
+
+      &.white::before, &.white::after {
+        background: #fff;
       }
     }
   }

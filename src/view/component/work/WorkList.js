@@ -1,13 +1,25 @@
 import React, { useState } from 'react'
+import classnames from 'classnames/bind';
 import WorkItem from './WorkItem';
 import workDataList from '../../../data/works.json';
+import style from './WorkList.scss';
+
+const cx = classnames.bind(style);
+const mn = "WorkList";
 
 function WorkList() {
   const [workListData] = useState(workDataList.data);
   return (
-    <ul>
+    <ul className={`${cx(mn)}`}>
       {
-        workListData.map(({ id, date,env, title, spec }) => <WorkItem key={id} date={date} env={env} id={id} title={title} spec={spec} />)
+        workListData.map(({ id, date, env, title, spec }) => (
+          <li key={id} className={cx(`${mn}_item`)}>
+            <WorkItem color={{
+              title: date.year < new Date().getFullYear() ? 'beige' : 'blue',
+              info: 'black'
+            }} date={date} env={env} id={id} title={title} spec={spec} />
+          </li>
+        ))
       }
     </ul>
   )
