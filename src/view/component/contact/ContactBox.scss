@@ -1,6 +1,8 @@
 @import '../../../styles/mixin.scss';
 
 .ContactBox {
+  padding-bottom: 94px;
+  
   &_title {
     @include guidance_text(#000000);
     margin-bottom: 38px;

@@ -1,0 +1,9 @@
+.WorkList {
+  &_item {
+    margin-bottom: 122px;
+
+     &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

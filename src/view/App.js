@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './component/header';
 import Layout from './component/layout';
 import Main from './page/Main';
-import Work from './page/Work';
+import Work from './page/work';
 import '../styles/main.scss'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Layout Header={Header}>
           <Switch>
-            <Route path="/work" component={Work} />
+            <Route path="/work/:id" component={Work} />
             <Route path="/" component={Main} />
           </Switch>
         </Layout>
