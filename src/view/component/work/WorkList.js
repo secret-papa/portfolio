@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import classnames from 'classnames/bind';
 import WorkItem from './WorkItem';
-import workDataList from '../../../data/works.json';
+import worksData from '../../../data/works.json';
 import style from './WorkList.scss';
 
 const cx = classnames.bind(style);
 const mn = "WorkList";
 
 function WorkList() {
-  const [workListData] = useState(workDataList.data);
+  const [workListData] = useState(worksData.data);
   return (
     <ul className={`${cx(mn)}`}>
       {
