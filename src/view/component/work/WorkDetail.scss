@@ -1,7 +1,6 @@
 @import '../../../styles/mixin.scss';
 
 .WorkDetail {
-  width: $contents-width;
 
   &_title {
     @include content_title();
@@ -9,8 +8,9 @@
     margin-bottom: 84px;
   }
   &_desc {
-    @include content_text(24px, 36px, 0.04px);
+    @include content_text(24px, 38px, 0.04px);
     padding-bottom: 44px;
+    width: $contents-width;
   }
 
   &_distribute {
@@ -23,6 +23,7 @@
 
       &_item {
         margin-right: 24px;
+        
         &:last-child {
           margin-right: 0;
         }
@@ -30,6 +31,10 @@
         &_link {
           font-size: 24px;
           font-family: 'roboto';
+
+          &:hover {
+            @include point_underline();
+          }
         }
       }
     }

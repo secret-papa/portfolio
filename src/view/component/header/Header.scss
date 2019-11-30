@@ -16,6 +16,12 @@
 
     &_item {
       margin-right: 28px;
+      padding-bottom: 1px;
+
+      &:hover {
+        @include point_underline();
+      }
+
       &:last-child {
         margin-right: 0;
       }
