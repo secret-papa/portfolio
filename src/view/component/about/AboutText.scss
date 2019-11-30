@@ -1,0 +1,7 @@
+@import '../../../styles/mixin.scss';
+
+.AboutText {
+  margin-bottom: 120px;
+  width: $contents-width; 
+  @include content_text();
+}

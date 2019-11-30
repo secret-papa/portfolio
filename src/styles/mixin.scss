@@ -1,0 +1,35 @@
+@import './font.scss';
+@import './variable.scss';
+
+@mixin guidance_text($color) {
+  font-size: $guidance-font-size;
+  font-family: 'roboto';
+  color: $color;
+  letter-spacing: 0.1em;
+}
+
+@mixin content_text() {
+  font-size: 28px;
+  line-height: 38px;
+  font-family: 'nanum-square-bold';
+}
+
+@mixin content_title($color) {
+  color: $color;
+  font-family: 'blacker-bold';
+  font-size: $content-title-font-size;
+  line-height: 110px;
+}
+
+@mixin content_info($color) {
+  color: $color;
+  font-size: 22px;
+}
+
+@mixin point_underline() {
+  background-image: linear-gradient(to bottom, #0000ff 0, #0000ff 100%);
+  background-repeat: repeat-x;
+  background-size: 0.1rem 0.1rem;
+  text-shadow: 2px 0px #f3f3f3, 2px 0px #f3f3f3, 1px 1px #f3f3f3, -1px 0 #f3f3f3, -2px 0 #f3f3f3, -3px 0 #f3f3f3, -3px -1px #f3f3f3;
+  background-position: 0 2rem;
+}

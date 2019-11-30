@@ -1,0 +1,11 @@
+@import '../../../styles/variable.scss';
+
+.Layout {
+  background: $main-background-color;
+  min-height: 100vh;
+  &_container {
+    width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 94px;
+  }
+}

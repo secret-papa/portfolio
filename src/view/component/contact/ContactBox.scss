@@ -1,0 +1,31 @@
+@import '../../../styles/mixin.scss';
+
+.ContactBox {
+  &_title {
+    @include guidance_text(#000000);
+    margin-bottom: 38px;
+  }
+  &_list {
+    display: flex;
+
+    &_item {
+      font-size: 30px;
+
+      &_link {
+        @include point_underline();
+      }
+
+      &::after {
+        content: '&';
+        margin: 0 14px;
+      }
+
+      &:last-child {
+        &::after {
+          content: '.';
+          margin: 0;
+        }
+      }
+    }
+  }
+}

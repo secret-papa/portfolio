@@ -1,0 +1,10 @@
+@import '../../../styles/mixin.scss';
+
+.WorkBox {
+  padding-bottom: 124px;
+
+  &_title {
+    @include guidance_text(#000000);
+    margin-bottom: 50px;
+  }
+}

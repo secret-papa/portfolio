@@ -1,0 +1,35 @@
+@import '../../../styles/mixin.scss';
+
+.WorkItem {
+  margin-bottom: 122px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &_title {
+    @include content_title(#0001fd);
+    margin-bottom: 14px;
+  }
+
+  &.old &_title {
+    color: #e0e0e0;
+  }
+
+  &_info {
+    @include content_info(#02020a);
+
+    &_center {
+      &::before, &::after {
+        background: #02020a;
+        content: '';
+        display: inline-block;
+        height: 2px;
+        margin: 0 10px;
+        transform: translateY(-2px);
+        vertical-align: middle;
+        width: 12px;
+      }
+    }
+  }
+}

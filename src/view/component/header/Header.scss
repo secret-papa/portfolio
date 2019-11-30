@@ -1,0 +1,24 @@
+@import '../../../styles/mixin.scss';
+
+.Header {
+  display: flex;
+  margin-bottom: 148px;
+  padding-top: 50px;
+  @include guidance_text(#000002);
+
+  &_logo {
+    margin-right: auto;
+  }
+
+  &_nav {
+    margin-left: auto;
+    @include guidance_text(#0911bd);
+
+    &_item {
+      margin-right: 28px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
