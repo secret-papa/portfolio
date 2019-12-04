@@ -28,3 +28,30 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .Header {
+    align-items: center;
+    background: $main-background-color;
+    flex-direction: column;
+    justify-content: center;
+    padding: 22px 0 104px 0;
+    margin-bottom: 0;
+    width: 100%;
+
+    &_logo {
+      font-size: 14px;
+      line-height: 42px;
+    }
+
+    &_nav {
+      font-size: 14px;
+      margin-left: 0;
+      margin-right: auto;
+
+      &_item {
+        margin-right: 16px;
+      }
+    }
+  }
+}
