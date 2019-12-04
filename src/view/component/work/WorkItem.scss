@@ -55,8 +55,7 @@
   .WorkItem {
 
     &_title {
-      font-size: 42px;
-      line-height: 52px;
+      @include mobile-content-title();
     }
 
     &_info {
