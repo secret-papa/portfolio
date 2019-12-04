@@ -20,6 +20,7 @@ function Work({
   const [nextWorkData, setNextWorkData] = useState(worksData.data[matchedWorkIndex + 1] || worksData.data[0]);
 
   useEffect(() => {
+    window.scrollTo(0,0);
     setWorkData(worksData.data[matchedWorkIndex]);
     setNextWorkData(worksData.data[matchedWorkIndex + 1] || worksData.data[0]);
   }, [id, matchedWorkIndex]);
