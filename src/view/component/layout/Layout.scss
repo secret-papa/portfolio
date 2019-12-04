@@ -7,3 +7,14 @@
     @include main-grid();
   }
 }
+
+@media (max-width: $mobile-width) {
+  .Layout {
+    position: relative;
+    width: 100%;
+
+    &_container {
+      @include mobile-main-grid();
+    }
+  }
+}

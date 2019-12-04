@@ -38,3 +38,21 @@
   text-shadow: 2px 0px #f3f3f3, 2px 0px #f3f3f3, 1px 1px #f3f3f3, -1px 0 #f3f3f3, -2px 0 #f3f3f3, -3px 0 #f3f3f3, -3px -1px #f3f3f3;
   background-position: 0 1.1em;
 }
+
+@mixin mobile-main-grid {
+  width: 82%;
+}
+
+@mixin mobile-guide-text {
+  font-size: 14px;
+}
+
+@mixin mobile-content-text {
+  font-size: 18px;
+  line-height: 34px;
+}
+
+@mixin mobile-content-title() {
+  font-size: 42px;
+  line-height: 52px;
+}

@@ -40,3 +40,33 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .WorkDetail {
+    &_title {
+      margin-bottom: 44px;
+      @include mobile-content-title();
+    }
+
+    &_desc {
+      width: 100%;
+      @include mobile-content-text();
+    }
+
+    &_distribute {
+
+      &_guide_text {
+        margin-bottom: 12px;
+        @include mobile-guide-text();
+      }
+
+      &_list {
+        &_item {
+          &_link {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

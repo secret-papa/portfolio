@@ -5,3 +5,11 @@
   width: $contents-width; 
   @include content_text(28px, 38px, 0.06px);
 }
+
+@media (max-width: $mobile-width) {
+  .AboutText {
+    @include mobile-content-text();
+    margin-bottom: 94px;
+    width: 100%;
+  }
+}
