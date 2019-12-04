@@ -42,3 +42,7 @@
 @mixin mobile-main-grid {
   width: 82%;
 }
+
+@mixin mobile-guide-text {
+  font-size: 14px;
+}
