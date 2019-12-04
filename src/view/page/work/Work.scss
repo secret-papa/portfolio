@@ -23,3 +23,27 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .WorkPage {
+    padding-bottom: 464px;
+    
+    &_footer {
+      bottom: 0;
+      height: 354px;
+      left: 0;
+      position: absolute;
+      width: 100vw;
+
+      &_wrp {
+        @include mobile-main-grid();
+        height: 354px;
+      }
+
+      &_guide {
+        font-size: 14px;
+        padding-bottom: 14px;
+      }
+    }
+  }
+}
