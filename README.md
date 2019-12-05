@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Front End Developer
 
-## Available Scripts
+## 소개
+나는 같이 만들어 가는것을 좋아한다. 협의를 통해 규칙을 만들고 이를 지키기 위해 노력하고 부족한 부분을 알아가게 되고 이를 보완하며 노력하는 과정이 즐겁다.  
+팀에 소속되어 작성한 코드는 개인의 코드가 아닌 팀의 코드여야 하며 이를 같이 만들어 가는 것이 중요하다고 생각한다.  
+  
+나는 상생해 나가는 개발 문화를 만들고 주도해 나갈수 있는 개발자가 되고 싶다.  
+  
+이메일 : seungha0802@gmail.com  
+블로그 : [https://secret-papa.github.io](https://secret-papa.github.io)  
+포트폴리오 : [https://portfolio.secret-papa.com](https://portfolio.secret-papa.com)  
 
-In the project directory, you can run:
 
-### `yarn start`
+## 경력
+2019/02 ~ 2019/11 텐큐브  
+2017/08 ~ 2018/09 에프아이티  
+2017/04 ~ 2017/07 아이프레즌트  
+  
+## Project
+### Notisave  
+기기에 오는 알림을 관리하는 앱이다. 등록된 알림을 모두 읽었을 때 구글이나 BuzzFeed의 RSS를 보여주는 웹 뷰의 전반적인 프론트 엔드 개발을 담당했다. 글로벌 서비스였기 때문에 기기에 설정한 언어를 바탕으로 RSS를 요청하여 화면을 구성하였다. DB와 통신하는 대신  LocalStorage를 사용 하였다. 읽음 처리나 데이터 갱신 주기까지 캐싱 처리를 위한 작업은 LocalStorage에 저장한 데이터를 바탕으로 하였다.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+사용 기술: React, Sass  
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Visual-Sharp
+가계부 앱에 들어가는 간단한 SNS 형식의 서비스이다. 업로드 페이지를 제외한 다른 페이지들은 웹 뷰로 제작되었고 웹 뷰의 전반적인 프론트엔드 개발을 담당했다. 가계부에 작성한 구매 내용을 바탕으로 사용자가 제품에 대한 간단한 글과 사진, 평점을 업로드하고 웹 뷰로 보여준다. 같은 데이터에 대한 인터렉션이 공유되고 화면이 넘어가도 스크롤이 유지 돼야햐기 때문에 화면을 스택으로 쌓는 방식을 사용했다. 퍼포먼스 이슈가 우려됐기 때문에 안드로이드의 액티비티를 사용하지 않고 웹에서 화면(태그)을 쌓는 방식을 사용했다.
 
-### `yarn test`
+사용 기술:  React, Redux, Sass
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### IBK 가계부 SDK
+IBK 가계부 SDK에 들어가는 웹 뷰 페이지를 제작하였다. 데이터 시각화를 위해 D3 라이브러리를 사용하였다. 사용 대부분은 회사에서 이전에 만든 가계부 SDK를 그대로 가져와 제작했다. 추가로 IOS 버전과 가계부 작성 페이지의 UI 개선, 설정 페이지 제작, IBK 앱에 맞게 변경된 디자인 적용을 담당했다.
 
-### `yarn build`
+사용 기술:  React, Redux, Sass
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 런투펫
+반려동물 미용 출장 중계 서비스다. 모바일 웹으로 제작되었으며 고객, 전문가, 병원 세 가지 버전으로 제작하였다. 고객이 반려동물의 정보와 이용 받을 서비스를 등록하면 병원을 통해 인증된 전문가들이 리스트 업되고 고객이 마음에 드는 전문가를 선택하여 원하는 서비스를 받을 수 있다. 이후 고객은 전문가에 대한 후기와 평가를 작성하고 공유 할 수 있다. 전문가는 고객에게 보여줄 자신의 이력을 관리할 수 있고 고객이 올린 미용 신청 게시글에 자신을 등록할 수 있다. 병원은 전문가를 인증, 관리한다. 전체적인 퍼블리싱과 UI 개발을 담당했으며 NodeJS에서 라우터 구성과 MySQL query 구문 작성 등 백엔드 개발도 경험해 보았다.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+사용 기술: jQuery, Css
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 데이터 집중 장치 모니터링 웹
+국가 과제로 진행한 프로젝트이며 데이터 집중 장치의 사용 전력량, 예비 전력량, DCU간 통신 속도를 모니터링하기 위해 제작하였다. 데이터는 그래프나 테이블 형태로 시각화했고 데이터양은 10개의 DCU별로 10개의 모뎀의 전력량과 통신 속도를 2초 간격으로 통신했다. 전체적인 퍼블리싱과 UI 개발을 담당하였다.
 
-### `yarn eject`
+사용 기술: jQuery, Css
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

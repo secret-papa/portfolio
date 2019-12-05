@@ -21,5 +21,5 @@ function ContactBox() {
   )
 }
 
-export default ContactBox
+export default ContactBox;
 
