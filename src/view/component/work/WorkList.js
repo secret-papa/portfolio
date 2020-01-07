@@ -15,7 +15,7 @@ function WorkList() {
         workListData.map(({ id, date, env, title, spec }) => (
           <li key={id} className={cx(`${mn}_item`)}>
             <WorkItem color={{
-              title: date.year < new Date().getFullYear() ? 'beige' : 'blue',
+              title: date.year < new Date().getFullYear() - 1 ? 'beige' : 'blue',
               info: 'black'
             }} date={date} env={env} id={id} title={title} spec={spec} />
           </li>
