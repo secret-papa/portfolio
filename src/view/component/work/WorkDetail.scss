@@ -1,6 +1,8 @@
 @import '../../../styles/mixin.scss';
 
 .WorkDetail {
+  @include main-grid();
+  min-height: calc(100vh - 599px);
 
   &_title {
     @include content_title();
@@ -14,6 +16,7 @@
   }
 
   &_distribute {
+
     &_guide_text {
       @include guidance_text(#000002);
       margin-bottom: 18px;
@@ -43,6 +46,9 @@
 
 @media (max-width: $mobile-width) {
   .WorkDetail {
+    @include mobile-main-grid();
+    margin: 0 auto;
+
     &_title {
       margin-bottom: 44px;
       @include mobile-content-title();
