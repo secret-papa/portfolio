@@ -54,7 +54,7 @@
       
     }
 
-    &_image {
+    &_content {
       display: block;
       margin: 0 auto;
 
@@ -82,7 +82,7 @@
       }
     }
 
-    &_image, &_mobile {
+    &_content, &_mobile {
       flex-basis: 30%;
     }
   }

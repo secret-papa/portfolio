@@ -54,19 +54,22 @@
         }],
       "media": [
         {
+          "type": "video",
           "caption": "가계부 메인 화면",
           "productEnv": "mobile",
-          "url": "/media/work/ibk/main.gif"
+          "url": "/media/work/ibk/main.mp4"
         },
         {
+          "type": "video",
           "caption": "가계부 업로드 화면",
           "productEnv": "mobile",
-          "url": "/media/work/ibk/upload.gif"
+          "url": "/media/work/ibk/upload.mp4"
         },
         {
-          "caption": "주간 보고서",
+          "type": "video",
+          "caption": "가계부 주간보고서 화면",
           "productEnv": "mobile",
-          "url": "/media/work/ibk/weeklyReport.gif"
+          "url": "/media/work/ibk/weeklyReport.mp4"
         }
       ]
     },

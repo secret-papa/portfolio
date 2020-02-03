@@ -35,12 +35,25 @@ function WorkDetail({
         !!media.length &&
         <div className={cx(`${mn}_media`)}>
           {
-            media.map(({ caption, productEnv, url }) => (
-              <figure key={url} className={cx(`${mn}_media_image`, `${mn}_media_${productEnv}`)}>
-                <img className={cx(`${mn}_media_image_src`)} src={url} alt={'dlalwl'} />
-                <figcaption className={cx(`${mn}_media_image_caption`)}>{caption}</figcaption>
-              </figure>
-            ))
+            media.map(({ caption, productEnv, type, url}) => {
+              if (type === 'image') {
+                return (
+                  <figure className={cx(`${mn}_media_content`, `${mn}_media_${productEnv}`)} key={url}>
+                    <img alt={caption} className={cx(`${mn}_media_content_src`)} src={url} />
+                    <figcaption className={cx(`${mn}_media_content_caption`)}>{caption}</figcaption>
+                  </figure>
+                )
+              } else {
+                return (
+                  <div className={cx(`${mn}_media_content`, cx(`${mn}_media_${productEnv}`))} key={url}>
+                    <video autoPlay className={cx(`${mn}_media_content_src`)} loop>
+                      <source src={url} type="video/mp4"></source>
+                    </video>
+                    <p className={`${cx(`${mn}_media_content_caption`)}`} >{caption}</p>
+                  </div>
+                )
+              }
+            })
           }
         </div>
       }
