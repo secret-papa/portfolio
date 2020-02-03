@@ -1,10 +1,11 @@
 @import '../../../styles/mixin.scss';
 
 .Header {
+  @include guidance_text(#000002);
+  @include main-grid();
   display: flex;
   margin-bottom: 148px;
   padding-top: 50px;
-  @include guidance_text(#000002);
 
   &_logo {
     margin-right: auto;
@@ -31,13 +32,13 @@
 
 @media (max-width: $mobile-width) {
   .Header {
+    @include mobile-main-grid();
     align-items: center;
-    background: $main-background-color;
+    // background: $main-background-color;
     flex-direction: column;
     justify-content: center;
     padding: 22px 0 86px 0;
     margin-bottom: 0;
-    width: 100%;
 
     &_logo {
       font-size: 14px;

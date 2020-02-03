@@ -1,1 +1,6 @@
 @import './reset.scss';
+@import './variable.scss';
+
+body {
+  $main-background-color: #f3f3f3;
+}

@@ -1,15 +1,13 @@
 @import '../../../styles/mixin.scss';
 
-.Layout {
-  background: $main-background-color;
-  min-height: 100vh;
+.Main {
   &_container {
     @include main-grid();
   }
 }
 
 @media (max-width: $mobile-width) {
-  .Layout {
+  .Main {
     position: relative;
     width: 100%;
 

@@ -18,7 +18,7 @@ function Work({
   const matchedWorkIndex = useMemo(() => worksData.data.findIndex(({ id: workId }) => workId === id), [id]);
   const [workData, setWorkData] = useState(worksData.data[matchedWorkIndex]);
   const [nextWorkData, setNextWorkData] = useState(worksData.data[matchedWorkIndex + 1] || worksData.data[0]);
-
+  
   useEffect(() => {
     window.scrollTo(0,0);
     setWorkData(worksData.data[matchedWorkIndex]);
@@ -27,7 +27,7 @@ function Work({
 
   return (
     <div className={cx(`${mn}`)}>
-      <WorkDetail desc={workData.desc} distribute={workData.distribute} title={workData.title} />
+      <WorkDetail desc={workData.desc} distribute={workData.distribute} media={workData.media} title={workData.title} />
       <footer className={cx(`${mn}_footer`)}>
         <div className={cx(`${mn}_footer_wrp`)} >
           <p className={`${mn}_footer_guide`}>Read Next</p>
