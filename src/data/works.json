@@ -34,19 +34,22 @@
           "type": "video",
           "caption": "메인 화면",
           "productEnv": "mobile",
-          "url": "/media/work/visualSharp/main.mp4"
+          "url": "/media/work/visualSharp/main.mp4",
+          "posterUrl": "/media/work/visualSharp/poster_main.png"
         },
         {
           "type": "video",
           "caption": "해쉬 & 개인 피드 화면",
           "productEnv": "mobile",
-          "url": "/media/work/visualSharp/hash.mp4"
+          "url": "/media/work/visualSharp/hash.mp4",
+          "posterUrl": "/media/work/visualSharp/poster_hash.png"
         },
         {
           "type": "video",
           "caption": "마이 페이지 화면",
           "productEnv": "mobile",
-          "url": "/media/work/visualSharp/myPage.mp4"
+          "url": "/media/work/visualSharp/myPage.mp4",
+          "posterUrl": "/media/work/visualSharp/poster_myPage.png"
         }
       ]
     },
@@ -77,19 +80,22 @@
           "type": "video",
           "caption": "가계부 메인 화면",
           "productEnv": "mobile",
-          "url": "/media/work/ibk/main.mp4"
+          "url": "/media/work/ibk/main.mp4",
+          "posterUrl": "/media/work/ibk/poster_main.png"
         },
         {
           "type": "video",
           "caption": "가계부 업로드 화면",
           "productEnv": "mobile",
-          "url": "/media/work/ibk/upload.mp4"
+          "url": "/media/work/ibk/upload.mp4",
+          "posterUrl": "/media/work/ibk/poster_upload.png"
         },
         {
           "type": "video",
           "caption": "가계부 주간보고서 화면",
           "productEnv": "mobile",
-          "url": "/media/work/ibk/weeklyReport.mp4"
+          "url": "/media/work/ibk/weeklyReport.mp4",
+          "posterUrl": "/media/work/ibk/poster_weeklyReport.png"
         }
       ]
     },

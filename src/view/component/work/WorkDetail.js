@@ -36,7 +36,7 @@ function WorkDetail({
         !!media.length &&
         <div className={cx(`${mn}_media`)}>
           {
-            media.map(({ caption, productEnv, type, url}) => {
+            media.map(({ caption, posterUrl, productEnv, type, url}) => {
               if (type === 'image') {
                 return (
                   <figure className={cx(`${mn}_media_content`, `${mn}_media_${productEnv}`)} key={url}>
@@ -52,6 +52,8 @@ function WorkDetail({
                       className={cx(`${mn}_media_content_src`)}
                       controls={isMobile ? true : false}
                       loop={isMobile ? false : true}
+                      muted
+                      poster={posterUrl ? posterUrl : ''}
                     >
                       <source src={url} type="video/mp4"></source>
                     </video>
