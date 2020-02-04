@@ -9,6 +9,7 @@ const mn = "WorkDetail";
 function WorkDetail({
   desc,
   distribute,
+  isMobile,
   media,
   title
 }) {
@@ -46,7 +47,7 @@ function WorkDetail({
               } else {
                 return (
                   <div className={cx(`${mn}_media_content`, cx(`${mn}_media_${productEnv}`))} key={url}>
-                    <video autoPlay className={cx(`${mn}_media_content_src`)} loop>
+                    <video autoPlay={isMobile ? false : true} className={cx(`${mn}_media_content_src`)} loop={isMobile ? false : true}>
                       <source src={url} type="video/mp4"></source>
                     </video>
                     <p className={`${cx(`${mn}_media_content_caption`)}`} >{caption}</p>
@@ -73,6 +74,7 @@ WorkDetail.propTypes = {
     productEnv: PropTypes.oneOf(['mobile', 'pc']),
     url: PropTypes.string,
   })),
+  isMobile: PropTypes.bool.isRequired,
   media: PropTypes.arrayOf(PropTypes.shape({
     caption: PropTypes.string,
     url: PropTypes.string.isRequired

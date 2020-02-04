@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import DeviceChecker from './util/DeviceChecker';
 import App from './view/App';
 
-ReactDOM.render(<App/>, document.getElementById('root'))
+const isMobile = new DeviceChecker().checkMobile(navigator.platform);
+
+ReactDOM.render(<App isMobile={isMobile} />, document.getElementById('root'))

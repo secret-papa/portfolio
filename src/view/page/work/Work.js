@@ -1,4 +1,5 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react';
+import PropTypes from 'prop-types'
 import classnames from 'classnames/bind';
 import style from './Work.scss';
 import WorkDetail from '../../component/work/WorkDetail';
@@ -9,6 +10,7 @@ const cx = classnames.bind(style);
 const mn = "WorkPage";
 
 function Work({
+  isMobile,
   match: {
     params: {
       id
@@ -27,7 +29,7 @@ function Work({
 
   return (
     <div className={cx(`${mn}`)}>
-      <WorkDetail desc={workData.desc} distribute={workData.distribute} media={workData.media} title={workData.title} />
+      <WorkDetail desc={workData.desc} distribute={workData.distribute} isMobile={isMobile} media={workData.media} title={workData.title} />
       <footer className={cx(`${mn}_footer`)}>
         <div className={cx(`${mn}_footer_wrp`)} >
           <p className={`${mn}_footer_guide`}>Read Next</p>
@@ -42,6 +44,15 @@ function Work({
       </footer>
     </div>
   )
+}
+
+Work.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      id: PropTypes.string.isRequired
+    }).isRequired
+  }).isRequired
 }
 
 export default Work;
