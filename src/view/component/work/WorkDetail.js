@@ -47,7 +47,12 @@ function WorkDetail({
               } else {
                 return (
                   <div className={cx(`${mn}_media_content`, cx(`${mn}_media_${productEnv}`))} key={url}>
-                    <video autoPlay={isMobile ? false : true} className={cx(`${mn}_media_content_src`)} loop={isMobile ? false : true}>
+                    <video
+                      autoPlay={isMobile ? false : true}
+                      className={cx(`${mn}_media_content_src`)}
+                      controls={isMobile ? true : false}
+                      loop={isMobile ? false : true}
+                    >
                       <source src={url} type="video/mp4"></source>
                     </video>
                     <p className={`${cx(`${mn}_media_content_caption`)}`} >{caption}</p>
